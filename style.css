@@ -1,0 +1,310 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    background-image:url("/img/fondo2.0.jpg");    
+    background-size: 100%;
+
+  }
+  /* Estilos del header */
+  header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+ .background-header{
+    background-color: brown;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+ }
+  .logo img{
+    width: 170px;
+
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: brown;
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size:18px;
+  }
+  .navbar ul li{
+    margin:0 50px 0 50px;
+  }
+  .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size:25px;
+  }
+
+   /* Main */
+  main {
+    margin: 100px 100px 0 100px;
+  }
+  .style-main{
+    background-color: #fff;
+    padding:20px;
+    margin-bottom:100px;
+    border-radius:20px;
+    box-shadow: #000;
+    border: #fff 4px solid;
+    background-image: url("/img/Logo-banner.jpeg");
+  }
+  .style-main h1{
+    color: #fff;
+  }
+  .style-main h2{
+    color: #fff;
+  }
+  .style-main2{
+    background-color: #fff;
+    padding:5px;
+    box-shadow: #000;
+    border: #000 1px solid;
+    margin-bottom:3px;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilos del título */
+  h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .titulo {
+    text-align: center;
+    color: #fff;
+  }
+  .Ordenar-main{
+    color: #fff;
+    text-align: center;
+  }
+  /* Estilos de la sección de productos */
+  .productos {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 0 50px 0;
+  }
+  .background-img{
+    background-image: url("/img/Plato.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .producto {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .producto h2 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .productos button {
+    background-color: brown;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px;
+    border-radius:20px;
+    cursor: pointer;
+    border: #fff 1px solid;
+  }
+  .btn-agregar {
+    background-color: brown;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border: #fff 1px solid;
+  }
+  .btn-Pagar{
+    background-color: brown;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 50px 15px 50px;
+    border-radius:20px;
+    cursor: pointer;
+    margin:10px 0 0 570px;
+    border: #fff 1px solid;
+  }
+  .Agregar1{
+    position: absolute;
+    top:210px;
+  }
+  .Agregar2{
+    position: absolute;
+    top:460px;
+  }
+  .productos img{
+    width:70%;
+    height:70%;
+    padding:35px;
+  }
+.Position-h2-1{
+  position: absolute;
+  top:-15px;
+}
+.Position-h2-2{
+  position: absolute;
+  top:235px;
+}
+  /* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 500px;
+  height:280px;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+.modal-width{
+  width:100%;
+  margin:5px 0 0 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.order-style{
+  background-color: #fff;
+  padding:0 0 50px 0;
+  margin:5px;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  max-width: 400px;
+  max-height: 100px;
+  overflow: auto;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.propina-style{
+  background-color: #fff;
+  padding:0 0 50px 0;
+  margin:5px;
+  text-align: center;
+  width: 600px;
+  height: 100px;
+  max-width: 400px;
+  max-height: 100px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.total-style{
+  background-color: #fff;
+  padding:0 0 50px 0;
+  margin:5px;
+  text-align: center;
+  width: 600px;
+  height: 100px;
+  max-width: 400px;
+  max-height: 100px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.order-style ul{
+    list-style: none;
+    font-size:18px;
+    text-decoration: none;
+}
+.width-50{
+  width:30%;
+}
+.width-100{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.width-100 p{ 
+  font-size:20px;
+}
+
+  /* Estilos del footer */
+  footer {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  

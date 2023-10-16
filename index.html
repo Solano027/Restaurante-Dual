@@ -1,30 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Dual</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Dual</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/img/Logo-1.jpeg">
 </head>
-
 <body>
-    <div>
-        <div class="lista">
-            <ul>
-                <ol> <a href="index.html">Home</a></ol>
-                <ol> <a href="menu.html">Menu</a></ol>
-                <ol> <a href="about-us.html">About us</a></ol>
-                <ol> <a href="reservacion.html">Reservation</a></ol>
-                <ol> <a href="contact.html">Contact</a></ol>
-            </ul>
-        </div>
-        <div class="title">
-            <h1>Restaurante Dual</h1>
-        </div>
-
-
+  <header class="background-header">
+    <nav class="navbar">    
+      <div class="container">
+    <div class="logo">
+      <img src="/img/Logo-banner.jpeg" alt="Logo del restaurante">
     </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="index.html">Nosotros</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  </header>
+  
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide"><img src="/img/Carusel2.jpg" alt="Imagen 1"></div>
+        <div class="carousel-slide"><img src="/img/Carusel1.jpg" alt="Imagen 2"></div>
+        <div class="carousel-slide"><img src="/img/Carusel5.jpg" alt="Imagen 3"></div>
+      </div>
+    </div>
+    <main>
+      <div class="style-main">   
+  <h1 class="titulo">Restaurante Dual</h1>
+  <div>
+    <div class="titulo">
+     <h2>Ofrecemos nuestros platillos de la mejor calidad</h2> 
+    </div>
+    <div class="Ordenar-main">
+      <h2>Ordena ahora</h2>
+    </div>
+  </div>
+</div> 
+  <div class="style-main2">
+    <p>Platillos Destacados</p>
+  </div>
+  <section class="productos">
+    <!-- Div de Pizza -->
+    <div class="Pizza">
+        <div class="producto background-img info">
+        <img src="/img/pizza test.webp" alt="Pizza">
+        <div class="Position-h2-1">
+        <h2>Pizza</h2>
+        </div>
+        </div>
+        <div class="Agregar1">
+          <button class="agregar-al-carrito" data-product="Pizza" data-price="10.99">Agregar al carrito</button>
+        </div>
+    </div>
+  <!-- Modal para la información de la pizza -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="agregar-al-carrito" data-product="Pizza" data-price="10.99">Agregar al carrito</button>
+    </div>
+  </div>
+  <!-- Div Hamburguesa -->
+    <div class="Hamburguesa">
+      <div class="producto background-img info">
+      <img src="/img/Hamburguesa.png" alt="Hamburguesa">
+      <div class="Position-h2-1">
+      <h2>Hamburguesa</h2>
+      </div>
+      </div> 
+      <div class="Agregar1">
+        <button class="agregar-al-carrito" data-product="Hamburguesa" data-price="8.99">Agregar al carrito</button>
+      </div>
+    </div>
+      <!-- Modal para la información de la Hamburguesa -->
+      <div class="modal Modal1">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Información de la Hamburguesa</h2>
+          <p>Esta Hamburguesa está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+          <button class="agregar-al-carrito" data-product="Hamburguesa" data-price="8.99">Agregar al carrito</button>
+        </div>
+      </div>
+    <!-- Div Ensalada -->
+    <div class="Ensalada">
+      <div class="producto background-img info">
+      <img src="/img/Ensalada.png" alt="Ensalada">
+      <div class="Position-h2-1">
+      <h2>Ensalada</h2>
+      </div>
+      </div>
+      <div class="Agregar1">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Ensalada -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Pastel -->
+    <div class="Pastel">
+      <div class="producto background-img info">
+      <img src="/img/Chocolate-Cake-removebg-preview.png" alt="Pastel">
+      <div class="Position-h2-1">
+      <h2>Pastel</h2>
+      </div>
+      </div>
+      <div class="Agregar1">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información del Pastel -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Tacos -->
+    <div class="Tacos">
+      <div class="producto background-img info">
+      <img src="/img/tacos.png" alt="Tacos">
+      <div class="Position-h2-1">
+      <h2>Tacos</h2>
+      </div>
+      </div>
+      <div class="Agregar1">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de los Tacos -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Spaghetti -->
+    <div class="spaghetti">
+      <div class="producto background-img info">
+      <img src="/img/spaghetti-with-ai-generated-free-png.webp" alt="spaghetti">
+      <div class="Position-h2-2">
+      <h2>Spaghetti</h2>
+      </div>
+      </div>     
+      <div class="Agregar2">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Spaghetti -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Pollo frito -->
+    <div class="Pollo frito">
+      <div class="producto background-img info">
+      <img src="/img/pollo.png" alt="Pollo frito">
+      <div class="Position-h2-2">
+      <h2>Pollo frito</h2>
+      </div>
+      </div>      
+      <div class="Agregar2">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Pollo frito -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Pescado -->
+    <div class="Pescado">
+      <div class="producto background-img info">
+      <img src="/img/pescado.png" alt="Pescado">
+      <div class="Position-h2-2">
+      <h2>Pescado</h2>
+      </div>
+      </div>      
+      <div class="Agregar2">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Pescado -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Frutas -->
+    <div class="Frutas">
+      <div class="producto background-img info">
+      <img src="/img/frutas.png" alt="Frutas">
+      <div class="Position-h2-2">
+      <h2>Frutas</h2>
+      </div>
+      </div> 
+      <div class="Agregar2">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Frutas -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+    <!-- Div Helado -->
+    <div class="Helado">
+      <div class="producto background-img info">
+      <img src="/img/helado.png" alt="Helado">
+      <div class="Position-h2-2">
+      <h2>Helado</h2>
+      </div>
+      </div>      
+      <div class="Agregar2">
+      <button class="agregar-al-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  <!-- Modal para la información de la Helado -->
+  <div class="modal Modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Pizza</h2>
+      <p>Esta pizza está hecha con los mejores ingredientes y tiene un precio de $X.XX.</p>
+      <button class="btn-agregar">Agregar al carrito</button>
+    </div>
+  </div>
+  </section>
+</section>
+<section class="width-100">
+   <!-- Carrito de compras -->
+   <section class="order order-style width-33">
+    <h2>Su Orden:</h2>
+    <ul id="cart-items">
+      <span class="product-name"></span>
+      <span class="product-price"></span>
+      <button class="eliminar-producto" style="display: none;">-</button>
+    </ul>
+  </section>
+  <section class="propina-style width-33">
+    <div class="propina">
+      <h2>Propina</h2>
+      <div class="opciones">
+        <input type="radio" name="propina" id="propina-10" value="10" checked>
+        <label for="propina-10">10%</label>
+    
+        <input type="radio" name="propina" id="propina-13" value="13">
+        <label for="propina-13">13%</label>
+    
+        <input type="radio" name="propina" id="propina-20" value="20">
+        <label for="propina-20">20%</label>
+      </div>
+    </section>
+    <section class="width-33 total-style">
+      <div class="resumen">
+        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+        <p>Propina: <span id="monto-propina">$0.00</span></p>
+        <p>Total: <span id="total">$0.00</span></p>
+      </div>
+    </div>    
+    </section>
+</section>
+<section class="btn-Pago">
+  <button class="btn-Pagar info">Pagar Ahora</button>
+</section>
+<div class="modal Modal1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ingrese su información</h2>
+    <form>
+      <div class="modal-width">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      </div>
+      <div class="modal-width">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" required>
+      </div>
+      <div class="modal-width">
+      <label for="telefono">Teléfono:</label>
+      <input type="number" id="telefono" pattern="[0-9]{8}" required>
+      </div>
+      <div class="campo-form">
+        <label class="modal-width" for="direccion">Dirección:</label>
+        <textarea class="modal-width" id="direccion" name="direccion" rows="4" cols="50"></textarea>
+      </div>
+      <button type="button" id="btn-reiniciar" class="btn-confirmar btn-agregar">Confirmar Pedido</button>
+    </form>
+  </div>
+</div>
+</section>
+</section>
+</main>
+  <footer>
+    <p>© 2023 Restaurante Dual</p>
+  </footer>
+  <script src="/scripts.js"></script>
 </body>
-
 </html>
