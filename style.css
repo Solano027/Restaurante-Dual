@@ -83,6 +83,10 @@ body {
     font-size:20px;
     text-align: center;
     font-weight: bold;
+    width:300px;;
+    border-radius:30px;
+    margin:0 0 10px 500px;
+
   }
   .carousel-container {
     width: 100%;

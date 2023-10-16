@@ -128,7 +128,6 @@ function displayCart() {
   });
 }
 
-// JSON de productos incluido directamente en JavaScript
 const productosJSON = {
   "productos": [
     {
@@ -229,7 +228,7 @@ reiniciarButton.addEventListener('click', () => {
 
   // Reinicia los valores de subtotal, propina y total
   const subtotalInicial = 0;
-  const { propina, total } = calcularTotalConPropina(subtotalInicial, 10); // Puedes ajustar el porcentaje de propina predeterminado aquí
+  const { propina, total } = calcularTotalConPropina(subtotalInicial, 10);
   actualizarValores(subtotalInicial, propina, total);
 
   // Oculta el carrito
