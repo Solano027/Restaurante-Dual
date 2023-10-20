@@ -1,43 +1,3 @@
-// APARTADO PARA OBTENER ELEMENTOS RELACIONADOS CON LOS MODALES
-const infoElements = document.querySelectorAll('.info');
-const modalElements = document.querySelectorAll('.Modal1');
-const closeButtons = document.querySelectorAll('.close');
-
-//APARTADO PARA EL MODAL DE CADA PRODUCTO MUESTRE LA INFORMACIÓN
-infoElements.forEach((trigger, index) => {
-  trigger.addEventListener('click', () => {
-    modalElements[index].style.display = 'block';
-  });
-});
-
-closeButtons.forEach((closeBtn, index) => {
-  closeBtn.addEventListener('click', () => {
-    modalElements[index].style.display = 'none';
-  });
-});
-
-// Cierra el modal si se hace clic fuera de él
-window.addEventListener('click', (event) => {
-  modalElements.forEach((modal) => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
-});
-
-//APARTADO PARA EL MODAL QUE SE MUESTRA AL DARLE CLICK AL BOTON DE "PAGAR AHORA"
-const confirmButtons = document.querySelectorAll('.btn-confirmar');
-confirmButtons.forEach((confirmButton, index) => {
-  confirmButton.addEventListener('click', () => {
-    // Oculta el modal
-    modalElements[index].style.display = 'none';
-    
-    // Muestra el mensaje de éxito
-    alert('Se ha realizado con éxito');
-  });
-});
-
-
 // Datos del carrito en formato JSON
 let cart = [];
 
@@ -128,50 +88,6 @@ function displayCart() {
   });
 }
 
-const productosJSON = {
-  "productos": [
-    {
-      "nombre": "Pizza",
-      "precio": 10.99
-    },
-    {
-      "nombre": "Hamburguesa",
-      "precio": 8.99
-    },
-    {
-      "nombre": "Ensalada",
-      "precio": 4.99
-    },
-    {
-      "nombre": "Pastel",
-      "precio": 10.99
-    },
-    {
-      "nombre": "Tacos",
-      "precio": 5.99
-    },
-    {
-      "nombre": "Spaghetti",
-      "precio": 9.99
-    },
-    {
-      "nombre": "Pollo frito",
-      "precio": 7.99
-    },
-    {
-      "nombre": "Pescado",
-      "precio": 10.99
-    },
-    {
-      "nombre": "Frutas",
-      "precio": 5.99
-    },
-    {
-      "nombre": "Helado",
-      "precio": 5.99
-    }
-  ]
-};
 
 // APARTADO PARA CALCULAR EL SUBTOTAL
 function calcularSubtotal(carrito, productosJSON) {
@@ -234,19 +150,6 @@ reiniciarButton.addEventListener('click', () => {
   // Oculta el carrito
   cartItemsList.style.display = 'none';
 });
-//APARTADO PARA EL CAROUSEL
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.carousel-slide');
-let currentIndex = 0;
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCarousel();
-}
 
-function updateCarousel() {
-  const translateX = -currentIndex * 100;
-  carousel.style.transform = `translateX(${translateX}%)`;
-}
 
-setInterval(nextSlide, 5000);

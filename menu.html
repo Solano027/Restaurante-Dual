@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual Restaurant</title>
+  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="icon" type="image/png" href="/img/Logo-1.jpeg">
+</head>
+<body>
+  <header class="background-header">
+    <nav class="navbar">    
+      <div class="container">
+    <div class="logo">
+      <img src="/img/LogoDual.png" alt="Logo del restaurante">
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="index.html">Nosotros</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  </header>
+    <main>
+<div class="style-main-menu">
+  <div id="filter-buttons" class="style-btn-menu">
+  <button id="btn-mostrar-todo">Mostrar todo</button>
+  <button id="filter-platillos" data-tipo="Platillo principal">Platillos Principales</button>
+  <button id="filter-postres" data-tipo="Postres">Postres</button>
+  <button id="filter-bebidas" data-tipo="Bebidas">Bebidas</button>
+</div>
+  </div>
+</div> 
+
+<div id="productos-container"  class="productos-container">
+  <section class="productos">
+    <div class="productos-container">
+    </div>
+</div>
+<section class="width-100 style-carrito">
+   <!-- Carrito de compras -->
+   <section class="order order-style width-33">
+    <h2>Su Orden:</h2>
+    <ul id="cart-items">
+      <span class="product-name"></span>
+      <span class="product-price"></span>
+      <button class="eliminar-producto" style="display: none;">-</button>
+    </ul>
+  </section>
+  <section class="propina-style width-33">
+    <div class="propina">
+      <h2>Propina</h2>
+      <div class="opciones">
+        <input type="radio" name="propina" id="propina-10" value="10" checked>
+        <label for="propina-10">10%</label>
+    
+        <input type="radio" name="propina" id="propina-13" value="13">
+        <label for="propina-13">13%</label>
+    
+        <input type="radio" name="propina" id="propina-20" value="20">
+        <label for="propina-20">20%</label>
+      </div>
+    </section>
+    <section class="width-33 total-style">
+      <div class="resumen">
+        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+        <p>Propina: <span id="monto-propina">$0.00</span></p>
+        <p>Total: <span id="total">$0.00</span></p>
+      </div>
+    </div>    
+    </section>
+</section>
+</section>
+<section class="btn-Pago">
+  <button id="btn-pagar-ahora" class="btn-Pagar info">Pagar Ahora</button>
+</section>
+<div class="modal Modal1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ingrese su información</h2>
+    <form>
+      <div class="modal-width">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      </div>
+      <div class="modal-width">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" required>
+      </div>
+      <div class="modal-width">
+      <label for="telefono">Teléfono:</label>
+      <input type="number" id="telefono" pattern="[0-9]{8}" required>
+      </div>
+      <div class="campo-form">
+        <label class="modal-width" for="direccion">Dirección:</label>
+        <textarea class="modal-width" id="direccion" name="direccion" rows="4" cols="50"></textarea>
+      </div>
+      <button type="button" id="btn-reiniciar"  class="btn-confirmar btn-agregar">Confirmar Pedido</button>
+    </form>
+  </div>
+</div>
+</section>
+</section>
+</main>
+  <footer>
+    <p>© 2023 Dual Restaurant</p>
+  </footer>
+  <script src="/Scripts/main-menu.js"></script>
+  <script src="/Scripts/carousel.js"></script>
+</body>
+</html>
