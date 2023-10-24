@@ -1,82 +1,18 @@
-//var request = new XMLHttpRequest();
-//request.open("GET", "/Scripts/menu.json", true);
+var productosJSON;
+var request = new XMLHttpRequest();
+request.open("GET", "/Scripts/menu.json", false);
 
-const productosJSON = {
-    "productos": [
-      {
-        "nombre": "Pizza",
-        "precio": 10.99,
-        "imagen": "../img/pizza test.webp",
-        "descripcion": "Esta pizza está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Hamburguesa",
-        "precio": 8.99,
-        "imagen": "../img/Hamburguesa.png",
-        "descripcion": "Esta Hamburguesa está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Ensalada",
-        "precio": 4.99,
-        "imagen": "../img/Ensalada.png",
-        "descripcion": "Esta Ensalada está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Bebidas"
-      },
-      {
-        "nombre": "Pastel",
-        "precio": 10.99,
-        "imagen": "../img/Chocolate-Cake-removebg-preview.png",
-        "descripcion": "Esta Pastel está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Postres"
-      },
-      {
-        "nombre": "Tacos",
-        "precio": 5.99,
-        "imagen": "../img/tacos.png",
-        "descripcion": "Esta Tacos está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Spaghetti",
-        "precio": 9.99,
-        "imagen": "../img/spaghetti-with-ai-generated-free-png.webp",
-        "descripcion": "Esta Spaghetti está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Pollo frito",
-        "precio": 7.99,
-        "imagen": "../img/pollo.png",
-        "descripcion": "Esta Pollo frito está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Pescado",
-        "precio": 10.99,
-        "imagen": "../img/pescado.png",
-        "descripcion": "Esta Pescado está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Platillo principal"
-      },
-      {
-        "nombre": "Frutas",
-        "precio": 5.99,
-        "imagen": "../img/frutas.png",
-        "descripcion": "Esta Frutas está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Postres"
-      },
-      {
-        "nombre": "Helado",
-        "precio": 5.99,
-        "imagen": "../img/helado.png",
-        "descripcion": "Esta Helado está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-        "tipo": "Postres"
-      }
-      
+request.onload = function() {  
 
-    ]
-  };
+  if (request.status >= 200 && request.status < 400) {
+    productosJSON = JSON.parse(request.responseText);
+  } else {    
+
+  }
+}
+request.send();
+
+
 const productosContainer = document.querySelector('.productos');
 const cartItemsList = document.getElementById('cart-items');
 const subtotalElement = document.getElementById('subtotal');

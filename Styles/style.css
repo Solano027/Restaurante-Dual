@@ -7,8 +7,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
-    background-image:url("/img/fondo2.0.jpg");    
+    background-color: #FFFDE4;  
     background-size: 100%;
 
   }
@@ -59,9 +58,12 @@ body {
   main {
     margin: 100px 100px 0 100px;
   }
+  .main-index {
+    margin: 50px 100px 0 100px;
+  }
   .style-main{
     background-color: #fff;
-    padding:20px;
+    padding:10px;
     margin-bottom:50px;
     border-radius:20px;
     box-shadow: #000;
@@ -75,6 +77,23 @@ body {
     box-shadow: #000;
     border: #fff 4px solid;
     background-image: url("/img/Logo-banner.jpeg");
+  }
+  .style-main-index{
+    background-color: #fff;
+    color: #fff;
+    border-radius:20px;
+    box-shadow: #000;
+    border: #fff 4px solid;
+    background-image: url("/img/Logo-banner.jpeg");
+  }
+
+  .style-main-menu-2{
+    background-color: brown;
+    padding:20px;
+    border-radius:20px;
+    box-shadow: #000;
+    border: #fff 4px solid;
+    margin-top:15px;
   }
   .style-btn-menu button{
     background-color: #fff;
@@ -187,10 +206,10 @@ body {
   .producto h2 {
     font-size: 20px;
     color: black;
-    bottom:30px;
     position: absolute;
     z-index:1;
     bottom:200px;
+  padding-left:10px;
   }
   
   .productos button {
@@ -319,23 +338,46 @@ textarea {
 .width-100{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .width-100-2{
   width: 100%;
   display: flex;
 }
 .width-50{
-  width:200px;
+  width:400px;
   margin:0 15px 0 15px;
   height: auto;
+  background-color: brown;
+  border-radius:20px;
 }
 .width-50 img{
   max-width: 100%;
   height: auto;
+  border-radius:20px;
+  border: brown 3px solid;
 }
 .width-100 p{ 
   font-size:20px;
+}
+.div-main{
+  background-color: brown;
+  text-align: center;
+  border-radius:20px;
+  padding:5px;
+  color: #fff;
+}
+.style-div-main{
+  max-width: 100%;
+  height: auto;
+  border-radius:20px;
+  border: brown 3px solid;
+  
+}
+.section-div-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .style-carrito{
   background-image: url("/img/Logo-banner.jpeg");
