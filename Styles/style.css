@@ -61,6 +61,9 @@ body {
   .main-index {
     margin: 50px 100px 0 100px;
   }
+  .main-nosotros {
+    margin: 200px 100px 152px 100px;
+  }
   .style-main{
     background-color: #fff;
     padding:10px;
@@ -86,6 +89,13 @@ body {
     border: #fff 4px solid;
     background-image: url("/img/Logo-banner.jpeg");
   }
+  .style-main-nosotros{
+    background-color: brown;
+    color: #fff;
+    border-radius:20px;
+    box-shadow: #000;
+    border: #fff 4px solid;
+  }
 
   .style-main-menu-2{
     background-color: brown;
@@ -106,6 +116,15 @@ body {
     margin:0 5px 0 5px;
     font-weight: bold;
     text-shadow: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .style-btn-menu button:hover{
+    background-color: brown;
+    color: #fff;
+    border: #fff 1px solid;
   }
   .style-btn-menu{
     display: flex;
@@ -355,7 +374,6 @@ textarea {
   max-width: 100%;
   height: auto;
   border-radius:20px;
-  border: brown 3px solid;
 }
 .width-100 p{ 
   font-size:20px;
@@ -372,12 +390,24 @@ textarea {
   height: auto;
   border-radius:20px;
   border: brown 3px solid;
-  
+}
+.style-div-main-nosotros{
+  max-width: 100%;
+  height: auto;
+  border-radius:20px;
+  border: brown 3px solid;
+  text-align: center;
+}
+.div-nosotros{
+  margin-left:20px;
 }
 .section-div-main{
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.section-div-main-nosotros{
+  width: 100%;
 }
 .style-carrito{
   background-image: url("/img/Logo-banner.jpeg");

@@ -57,11 +57,11 @@
       "tipo": "Platillo principal"
     },
     {
-      "nombre": "Frutas",
+      "nombre": "Batido de fresa",
       "precio": 5.99,
-      "imagen": "../img/frutas.png",
-      "descripcion": "Esta Frutas está hecha con los mejores ingredientes y tiene un precio de $10.99.",
-      "tipo": "Postres"
+      "imagen": "../img/Batido-de-fresa.png",
+      "descripcion": "Este Batido de fresa está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Bebidas"
     },
     {
       "nombre": "Helado",
@@ -69,6 +69,43 @@
       "imagen": "../img/helado.png",
       "descripcion": "Esta Helado está hecha con los mejores ingredientes y tiene un precio de $10.99.",
       "tipo": "Postres"
+    },
+    {
+      "nombre": "Jugo de naranja",
+      "precio": 5.99,
+      "imagen": "../img/Jugo-naranja.png",
+      "descripcion": "Este Jugo de naranja está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Bebidas"
+    },
+    {
+      "nombre": "Café",
+      "precio": 5.99,
+      "imagen": "../img/Café.png",
+      "descripcion": "Este Café está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Bebidas"
+    },
+    {
+      "nombre": "Flan de caramelo",
+      "precio": 5.99,
+      "imagen": "../img/Flan-caramelo.png",
+      "descripcion": "Este Flan de caramelo está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Postres"
+    },
+    {
+      "nombre": "Lasagna",
+      "precio": 5.99,
+      "imagen": "../img/Lasagna.png",
+      "descripcion": "Esta Lasagna está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Platillo principal"
+    },
+    {
+      "nombre": "Brownie de Nuez",
+      "precio": 5.99,
+      "imagen": "../img/Brownie-de-Nuez.png",
+      "descripcion": "Este Brownie de Nuez está hecha con los mejores ingredientes y tiene un precio de $10.99.",
+      "tipo": "Postres"
     }
+
+    
   ]
 }
